@@ -28,6 +28,12 @@
 * take a screenshot at laptop and Moto G4 device sizes in Devtools
 */
 
+:root {
+  --main-bg-color: #f0f0f0;
+  --accent-color: #4CAF50;
+  --text-color: #333333;
+}
+
 body {
   font: 100% "Poppins", sans-serif;
 }
