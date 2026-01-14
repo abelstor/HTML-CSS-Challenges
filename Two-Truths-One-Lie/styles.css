@@ -31,43 +31,67 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
 
 :root {
-  --main-bg-color: #f0f0f0;
   --primary-color: #82977a;
   --secondary-color: #d9ead3;
   --text-color: #333333;
   --text-font: "Poppins", sans-serif;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: var(--text-font);
-  background-color: var(--main-bg-color);
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  /* font-size: 16px; */
+  min-height: 100vh;
+}
+
+img {
+  max-width: 120px;
+  height: 100px;
 }
 
 header,
 footer {
-  font-family: var(--text-font);
-  background-color: var(--primary-color);
-  color: white;
   text-align: center;
-  padding: 1em 0;
+  padding: 3em 0 1.5em;
 }
 
-.main {
+.container {
+  padding: 2em 2em 0;
+}
+
+.content {
   background-color: var(--secondary-color);
+  margin: 1em 0 2em;
+  padding: 1.5em;
 }
 
-/* .content {
-
+.content-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.5em;
+  margin-bottom: 2em;
 }
 
-.content-img{
-
+.content-header-title {
+  font-weight: 500;
+  font-size: 1.7em;
 }
 
-.content-title{
-
+.content-body {
+  padding: 0 1em;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  text-align: left;
 }
 
-.content-list{
-
-} */
+.content-body li {
+  margin-bottom: 0.8em;
+}
